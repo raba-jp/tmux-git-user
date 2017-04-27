@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git_dir="$(cd `tmux display-message -p -F "#pane_current_path"`)"
+git_dir="$(cd `tmux display-message -p -F "#{pane_current_path}"`)"
 git_user="$(git config --get user.name)"
 git_email="$(git config --get user.email)"
 
