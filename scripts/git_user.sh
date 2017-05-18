@@ -26,7 +26,7 @@ get_config_value() {
 name=`get_config_value "user.name"`
 email=`get_config_value "user.email"`
 separator=`get_separator`
-[[ -n ${name} || -n ${email} ]] && echo "${name}${separator}${email}"
+[[ -n ${name} || -n ${email} ]] && echo "[${name}${separator}${email}]"
 
 unset source_path
 unset name
